@@ -27,14 +27,14 @@ const Nav = () => {
   return (
     <Box className="animated-gradient-background" pb={6}>
       <Container maxW={1300} textColor={"white"} >
-        <Box pt={8}>
+        <Box pt={4}>
           <Flex gap={8} justifyContent={"space-between"}>
             <Box>
               <Image src="./esalink.svg" width={200} height={100} alt="image" />
             </Box>
 
-            <Flex gap={6} display={{ base: "none", md: "flex" }}>
-              <Text>ELECTRONIC INVOICING 2024</Text>
+            <Flex gap={6} display={{ base: "none", md: "flex" }} alignItems={'center'}>
+              <Text border={'2px solid white'} borderRadius={16} p={3}>ELECTRONIC INVOICING 2024</Text>
               <Text>Expertise</Text>
               <Text>Solutions</Text>
               <Text>Services</Text>
@@ -87,13 +87,57 @@ const Nav = () => {
               </Menu>
             </Flex>
 
-            <Flex gap={4} display={{ base: "none", md: "flex" }}>
+            <Flex gap={4} display={{ base: "none", md: "flex" }} alignItems={'center'}>
               <Text>TMA CONNECTION</Text>
-              <Text>GET A DEMO</Text>
-              <Box  display={'flex'}  >
+              <Text borderRadius={16} bg={'whiteAlpha.400'}  p={3} >GET A DEMO</Text>
+           
+                  <Menu>
+                <MenuButton
+                  onClick={toggleExpansion}
+                  transition="all 0.2s"
+                  _hover={{ bg: "white.400" }}
+                >
+                  <Flex align="center">
                     FR
                     <BiChevronDown />
-                  </Box>
+                  </Flex>
+                </MenuButton>
+                <MenuList
+                  textColor="black"
+                  width={menuWidth}
+                  maxW="100%"
+                  overflowX="auto"
+                >
+                  <MenuItem py={10}>
+                    New File 1 : Lorem, ipsum dolor sit amet consectetur
+                    adipisicing elit. Minus dolorem blanditiis ullam excepturi
+                    eligendi quis alias temporibus ut eveniet? Exercitationem,
+                    repudiandae inventore commodi autem placeat quam natus
+                    beatae officiis voluptas.
+                  </MenuItem>
+                  <MenuItem py={10}>
+                    New File 2 : Lorem ipsum, dolor sit amet consectetur
+                    adipisicing elit. Soluta dolores non saepe et, nisi ipsam.
+                    Similique dicta tempora maiores quas, quibusdam,
+                    perspiciatis, ad ullam quidem veritatis ex voluptas possimus
+                    distinctio.
+                  </MenuItem>
+                  <MenuItem py={10}>
+                    New File 2 : Lorem ipsum, dolor sit amet consectetur
+                    adipisicing elit. Soluta dolores non saepe et, nisi ipsam.
+                    Similique dicta tempora maiores quas, quibusdam,
+                    perspiciatis, ad ullam quidem veritatis ex voluptas possimus
+                    distinctio.
+                  </MenuItem>
+                  <MenuItem py={10}>
+                    New File 2 : Lorem ipsum, dolor sit amet consectetur
+                    adipisicing elit. Soluta dolores non saepe et, nisi ipsam.
+                    Similique dicta tempora maiores quas, quibusdam,
+                    perspiciatis, ad ullam quidem veritatis ex voluptas possimus
+                    distinctio.
+                  </MenuItem>
+                </MenuList>
+              </Menu>
             </Flex>
           </Flex>
         </Box>
@@ -125,10 +169,10 @@ const Nav = () => {
             </Text>
 
             <Flex gap={10}>
-              <Text fontSize={{ base: "14px", md: "20px" }}>
+              <Text borderRadius={16} bg={'whiteAlpha.400'}  p={3} fontSize={{ base: "14px", md: "20px" }}>
                 Find your EDI solution
               </Text>
-              <Text fontSize={{ base: "14px", md: "20px" }}>
+              <Text borderRadius={16} bg={'whiteAlpha.400'}  p={3} fontSize={{ base: "14px", md: "20px" }}>
                 Switch to electronic invoicing
               </Text>
             </Flex>
