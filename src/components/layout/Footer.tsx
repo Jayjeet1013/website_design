@@ -140,6 +140,37 @@ const Footer = () => {
         </Box>
 </Flex>
 </Flex>
+
+<Flex pt={6} gap={6} justifyContent={'space-between'} direction={{base:'column',md:'row'}}>
+        <Flex gap={6} direction={{base:'column',md:'row'}}>
+  <Flex >
+  <Image src={'/gdpr-logo.png'} width={40} height={10} alt="app play"/>
+  <Image src={'/iso-logo1.png'} width={40} height={10} alt="app play"/>
+  <Image src={'/soc-logo.webp'} width={40} height={10} alt="app play"/>
+  <Image src={'/hipaa-logo.png'} width={40} height={10} alt="app play"/>
+  </Flex>
+
+<Flex>
+
+Security |
+Terms and privacy |
+Privacy policy |
+Cookie settings |
+Status 
+
+</Flex>
+
+<Text>
+All Rights Reserved © monday.com
+</Text>
+</Flex>
+
+<Box>
+        <Text>Accessibility statement</Text>
+</Box>
+
+</Flex>
+
       </Container>
     </Box>
   );
