@@ -20,15 +20,15 @@ const Footer = () => {
         py={20}
         gap={6}
         direction={"column"}
-        bg={"blue"}
+        bg={"blue.900"}
         alignItems="center"
         justifyContent="center"
       >
-        <Text>Deliver your best work with monday.com</Text>
-        <Text>No credit card needed ✦ Unlimited time on Free plan</Text>
+        <Text fontSize={{base:'20px',md:'32px'}}>Deliver your best work <Text as={'span'} fontWeight={600}> with monday.com</Text></Text>
+        <Text fontSize={{base:'14px',md:'26px'}}>No credit card needed ✦ Unlimited time on Free plan</Text>
         <Box>
-          <Button>
-            Get Started <BsArrowRightShort />
+          <Button borderRadius={16} p={6}>
+            Get Started <BsArrowRightShort/>
           </Button>
         </Box>
       </Flex>

@@ -7,27 +7,46 @@ const Section_3 = () => {
 <Box py={10}>
 <Container maxW={1300} py={20}>
        
-<Flex px={2} justifyContent={'space-between'} direction={{base:'column',md:'row'}} gap={10}>
-        <Center>
+<Flex  justifyContent={'space-between'} direction={{base:'column',md:'row'}} gap={16}>
+      
 <Box>
-        <Image src={'/mobile.png'} width={200} height={10} alt='mobile image'/>
+        <Image src={'/mobile.png'} width={400} height={10} alt='mobile image'/>
 </Box>
-</Center>
-<Flex direction={'column'} gap={8}>
-<Text fontSize={{base:'24px',md:'36px'}} fontWeight={600}>Never Waste Another Lead</Text>
-<Box>
+
+<Flex direction={'column'} gap={12}>
+<Text fontSize={{base:'24px',md:'46px'}} fontWeight={500}>Never Waste Another Lead</Text>
+<Flex>
+        <Box p={4} alignItems={'center'} alignContent={'center'}>
+                <Image src={'/w_01.png'}  alt='img' width={40} height={10}/>
+        </Box>
+        <Box>      
         <Text fontSize={{base:'18px',md:'24px'}}>Enforced lead updates</Text>
         <Text fontSize={{base:'14px',md:'21px'}} >After every call, sales agents have to update the lead status before moving on to the next lead.</Text>
 </Box>
-<Box>
-        <Text fontSize={{base:'18px',md:'24px'}}>Mobile notifications for all your follow ups</Text>
-        <Text fontSize={{base:'14px',md:'21px'}}>Easily add follow up reminders for your leads to ensure you do lose any deals.</Text>
-</Box>
-<Box>
-        <Text fontSize={{base:'18px',md:'24px'}}>Conversation history for every lead</Text>
-        <Text fontSize={{base:'14px',md:'21px'}}>View history of calls, WhatsApp messages, and notes for every lead.</Text>
+</Flex>
+
+
+<Flex>
+        <Box p={4} alignItems={'center'} alignContent={'center'}>
+                <Image  src={'/notifications-icon.png'} alt='img' width={40} height={10}/>
+        </Box>
+        <Box>      
+        <Text fontSize={{base:'18px',md:'24px'}}>Enforced lead updates</Text>
+        <Text fontSize={{base:'14px',md:'21px'}} >After every call, sales agents have to update the lead status before moving on to the next lead.</Text>
 </Box>
 </Flex>
+<Flex>
+        <Box p={4} alignItems={'center'} alignContent={'center'}>
+                <Image src={'/whatsapp.png'} alt='img' width={40} height={10}/>
+        </Box>
+        <Box>      
+        <Text fontSize={{base:'18px',md:'24px'}}>Enforced lead updates</Text>
+        <Text fontSize={{base:'14px',md:'21px'}} >After every call, sales agents have to update the lead status before moving on to the next lead.</Text>
+</Box>
+</Flex>
+
+</Flex>
+
 </Flex>
 </Container>
 </Box>
