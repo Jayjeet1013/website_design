@@ -32,8 +32,8 @@ const Nav = () => {
               <Image src="./esalink.svg" width={200} height={100} alt="image" />
             </Box>
 
-            <Flex gap={3} display={{ base: "none", md: "flex" }}>
-              <Text>FACTURATION ÉLECTRONIQUE 2024</Text>
+            <Flex gap={6} display={{ base: "none", md: "flex" }}>
+              <Text>ELECTRONIC INVOICING 2024</Text>
               <Text>Expertise</Text>
               <Text>Solutions</Text>
               <Text>Services</Text>
@@ -87,8 +87,8 @@ const Nav = () => {
             </Flex>
 
             <Flex gap={3} display={{ base: "none", md: "flex" }}>
-              <Text>CONNEXION TMA</Text>
-              <Text>OBTENIR UNE DÉMO</Text>
+              <Text>TMA CONNECTION</Text>
+              <Text>GET A DEMO</Text>
               <Text>FR</Text>
             </Flex>
           </Flex>
@@ -109,16 +109,19 @@ const Nav = () => {
               />{" "}
             </Box>
             <Text fontSize={{ base: "32px", md: "65px" }} width={"90%"}>
-              La dématérialisation au service de votre business
+            Dematerialization
+at the service of your business
             </Text>
 
             <Text fontSize={20}>
-              Esalink vous accompagne dans la digitalisation de vos flux B2B
+            Esalink supports you in the digitalization of your B2B flows
             </Text>
 
             <Flex gap={4}>
-              <Text>Trouver votre solution EDI</Text>
-              <Text>Passer à la facturation électronique</Text>
+              <Text>Find your EDI solution
+
+</Text>
+              <Text>Switch to electronic invoicing</Text>
             </Flex>
           </Flex>
           <Box display={{ base: "none", md: "flex" }}>
