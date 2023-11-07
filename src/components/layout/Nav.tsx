@@ -25,7 +25,7 @@ const Nav = () => {
   const menuWidth = expanded ? "800px" : "auto";
 
   return (
-    <Box className="animated-gradient-background" pb={10}>
+    <Box className="animated-gradient-background" pb={6}>
       <Container maxW={1300} textColor={"white"} >
         <Box pt={8}>
           <Flex gap={8} justifyContent={"space-between"}>
@@ -138,12 +138,12 @@ const Nav = () => {
              src={"/generix-white.webp"}
             
               alt="globe image"
-              width={100}
+              width={120}
               height={100}
             />    <Image
             src="/cleo-white.webp"
             alt="globe image"
-            width={100}
+            width={90}
             height={20}
           />    <Image
           src={"/HUBTIMIZE-white.webp"}
@@ -157,7 +157,7 @@ const Nav = () => {
             <Image
           src={"/ibm-white.webp"}
           alt="globe image"
-          width={100}
+          width={80}
           height={200}
         />
          <Image
