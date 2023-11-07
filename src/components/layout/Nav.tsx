@@ -8,6 +8,7 @@ import {
   MenuItem,
   MenuList,
   Text,
+  flexbox,
 } from "@chakra-ui/react";
 import Image from "next/image";
 import React from "react";
@@ -26,7 +27,7 @@ const Nav = () => {
   return (
     <Box bg={"skyblue"} pb={10}>
       <Container maxW={1300} textColor={"white"}>
-        <Box pt={4}>
+        <Box pt={8}>
           <Flex gap={8} justifyContent={"space-between"}>
             <Box>
               <Image src="./esalink.svg" width={200} height={100} alt="image" />
@@ -86,10 +87,13 @@ const Nav = () => {
               </Menu>
             </Flex>
 
-            <Flex gap={3} display={{ base: "none", md: "flex" }}>
+            <Flex gap={4} display={{ base: "none", md: "flex" }}>
               <Text>TMA CONNECTION</Text>
               <Text>GET A DEMO</Text>
-              <Text>FR</Text>
+              <Box  display={'flex'}  >
+                    FR
+                    <BiChevronDown />
+                  </Box>
             </Flex>
           </Flex>
         </Box>
@@ -99,7 +103,7 @@ const Nav = () => {
           direction={{ base: "column", md: "row" }}
         >
           <Flex direction={"column"} gap={4}>
-            <Box w={40} py={6}>
+            <Box w={40} pt={16}>
               {" "}
               <Image
                 src="/iso.jpg"
@@ -108,21 +112,69 @@ const Nav = () => {
                 height={1}
               />{" "}
             </Box>
-            <Text fontSize={{ base: "32px", md: "65px" }} width={"90%"}>
-            Dematerialization
-at the service of your business
+            <Text
+              fontSize={{ base: "32px", md: "65px" }}
+              fontWeight={600}
+              width={"90%"}
+            >
+              Dematerialization at the service of your business
             </Text>
 
-            <Text fontSize={20}>
-            Esalink supports you in the digitalization of your B2B flows
+            <Text fontSize={{ base: "20px", md: "30px" }}>
+              Esalink supports you in the digitalization of your B2B flows
             </Text>
 
-            <Flex gap={4}>
-              <Text>Find your EDI solution
-
-</Text>
-              <Text>Switch to electronic invoicing</Text>
+            <Flex gap={10}>
+              <Text fontSize={{ base: "14px", md: "20px" }}>
+                Find your EDI solution
+              </Text>
+              <Text fontSize={{ base: "14px", md: "20px" }}>
+                Switch to electronic invoicing
+              </Text>
             </Flex>
+
+<Flex gap={16}>   <Flex gap={16} py={20}  direction={{ base: "column", md: "row" }}>
+            <Image
+             src={"/generix-white.webp"}
+            
+              alt="globe image"
+              width={100}
+              height={100}
+            />    <Image
+            src="/cleo-white.webp"
+            alt="globe image"
+            width={100}
+            height={20}
+          />    <Image
+          src={"/HUBTIMIZE-white.webp"}
+          alt="globe image"
+          width={100}
+          height={200}
+        />
+        
+            </Flex>
+            <Flex gap={16} py={20}  direction={{ base: "column", md: "row" }}>
+            <Image
+          src={"/ibm-white.webp"}
+          alt="globe image"
+          width={100}
+          height={200}
+        />
+         <Image
+          src={"/gs1-white.webp"}
+          alt="globe image"
+          width={100}
+          height={200}
+        />
+         <Image
+          src={"/fne-white.webp"}
+          alt="globe image"
+          width={100}
+          height={200}
+        />
+            </Flex></Flex>
+         
+
           </Flex>
           <Box display={{ base: "none", md: "flex" }}>
             <Image
