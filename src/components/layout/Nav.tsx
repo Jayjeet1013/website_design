@@ -25,8 +25,8 @@ const Nav = () => {
   const menuWidth = expanded ? "800px" : "auto";
 
   return (
-    <Box bg={"skyblue"} pb={10}>
-      <Container maxW={1300} textColor={"white"}>
+    <Box className="animated-gradient-background" pb={10}>
+      <Container maxW={1300} textColor={"white"} >
         <Box pt={8}>
           <Flex gap={8} justifyContent={"space-between"}>
             <Box>

@@ -1,0 +1,20 @@
+.animated-gradient-background {
+        width: 100%;
+        height: 'auto';
+        background: linear-gradient(45deg, red, blue, orange, yellow, pink);
+        background-size: 500% 500%;
+        animation: gradientAnimation 10s ease infinite;
+      }
+      
+      @keyframes gradientAnimation {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+      
